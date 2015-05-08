@@ -22,5 +22,6 @@
     <property name="sm_test_statistics_table_columnsOrder2" value="2" />
     <property name="LayoutCode.optimizeImports" value="false" />
     <property name="LayoutCode.processChangedText" value="false" />
+    <property name="ShowDocumentationInToolWindow" value="true" />
   </component>
 </application>
