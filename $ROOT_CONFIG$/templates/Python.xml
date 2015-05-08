@@ -105,4 +105,26 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="testmeth" value="# noinspection PyMethodMayBeStatic&#10;def test_$METHOD_TO_TEST$(self):&#10;    &quot;&quot;&quot;&#10;    Unit test case for :py:method:'$CLASS_NAME$.$METHOD_TO_TEST$'.&#10;    &quot;&quot;&quot;&#10;    assert_that($VALUE$, is_(True))&#10;            &#10;" description="Unit test case for method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_TO_TEST" expression="" defaultValue="&quot;method_to_test&quot;" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
