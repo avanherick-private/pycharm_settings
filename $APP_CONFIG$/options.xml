@@ -23,5 +23,6 @@
     <property name="LayoutCode.optimizeImports" value="false" />
     <property name="LayoutCode.processChangedText" value="false" />
     <property name="ShowDocumentationInToolWindow" value="true" />
+    <property name="FindSplitterProportion" value="0.25" />
   </component>
 </application>
