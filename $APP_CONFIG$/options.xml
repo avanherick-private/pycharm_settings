@@ -24,5 +24,9 @@
     <property name="LayoutCode.processChangedText" value="false" />
     <property name="ShowDocumentationInToolWindow" value="true" />
     <property name="FindSplitterProportion" value="0.25" />
+    <property name="OpenOrAttachDialog.OpenMode" value="new" />
+    <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
+    <property name="python.app.engine.sdk.path" value="" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/PyCharmProjects/evalytica-merge" />
   </component>
 </application>
