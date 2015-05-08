@@ -160,18 +160,18 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
-        <option value="$USER_HOME$/PyCharmProjects/evalytica-pycharm-branch/StdAnalyticServer" />
         <option value="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer" />
+        <option value="$USER_HOME$/PyCharmProjects/evalytica-pycharm-branch/StdAnalyticServer" />
         <option value="$USER_HOME$/PyCharmProjects/celerySandbox" />
         <option value="$USER_HOME$/PyCharmProjects/flaskSandbox" />
       </list>
     </option>
     <option name="openPaths">
       <list>
-        <option value="$USER_HOME$/PyCharmProjects/evalytica-pycharm-branch/StdAnalyticServer" />
+        <option value="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer" />
       </list>
     </option>
-    <option name="lastPath" value="$USER_HOME$/PyCharmProjects/evalytica-pycharm-branch/StdAnalyticServer" />
+    <option name="lastPath" value="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer" />
   </component>
   <component name="RecentTaskRepositories">
     <JIRA shared="false" url="https://jira.evalytica.com:8443">
