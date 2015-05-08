@@ -11,11 +11,22 @@
   <XML>
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
   </XML>
+  <codeStyleSettings language="CoffeeScript">
+    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+    <option name="PARENT_SETTINGS_INSTALLED" value="true" />
+  </codeStyleSettings>
   <codeStyleSettings language="JSON">
     <option name="KEEP_LINE_BREAKS" value="false" />
     <indentOptions>
       <option name="INDENT_SIZE" value="4" />
     </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JavaScript">
+    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+    <option name="PARENT_SETTINGS_INSTALLED" value="true" />
+  </codeStyleSettings>
+  <codeStyleSettings language="Python">
+    <option name="PARENT_SETTINGS_INSTALLED" value="true" />
   </codeStyleSettings>
   <codeStyleSettings language="SQL">
     <indentOptions>
@@ -23,5 +34,9 @@
       <option name="CONTINUATION_INDENT_SIZE" value="8" />
       <option name="TAB_SIZE" value="4" />
     </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="TypeScript">
+    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+    <option name="PARENT_SETTINGS_INSTALLED" value="true" />
   </codeStyleSettings>
 </code_scheme>
