@@ -1,0 +1,150 @@
+<templateSet group="Python">
+  <template name="classm" value="@classmethod&#10;def $NAME$(self, $ARGS$):&#10;    return $END$" description="Class method" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="staticm" value="@staticmethod&#10;def $NAME$($ARGS$):&#10;    return $END$" description="Static method" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="classdec" value="class $NAME$($SUPER$):&#10;&#10;    ##############################&#10;    # Static methods&#10;&#10;    ##############################&#10;    # Class attributes&#10;&#10;    ##############################&#10;    # Class methods&#10;&#10;    ##############################&#10;    # Instance methods&#10;&#10;    def __init__(self):&#10;        &quot;&quot;&quot;&#10;        Class initializer method.&#10;        &quot;&quot;&quot;&#10;        pass&#10;        " description="Class declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUPER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="testmod" value="class Test$CAMEL_MODULE_TO_TEST$(object):&#10;    &quot;&quot;&quot;&#10;    Unit test for class module-level functions in :py:module:'$MODULE_TO_TEST$'.&#10;    &quot;&quot;&quot;&#10;&#10;    ##############################&#10;    # Static methods&#10;&#10;    ##############################&#10;    # Class attributes&#10;&#10;    ##############################&#10;    # Class methods&#10;&#10;    # Class set up / tear down&#10;&#10;    @classmethod&#10;    def setup_class(cls):&#10;        &quot;&quot;&quot;&#10;        Called before all of the other methods in this class.&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10; &#10;    @classmethod&#10;    def teardown_class(cls):&#10;        &quot;&quot;&quot;&#10;        Called after all of the other methods in this class.&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10;&#10;    ##############################&#10;    # Instance methods&#10;&#10;    def __init__(self):&#10;        &quot;&quot;&quot;&#10;        Class initializer method.&#10;        &quot;&quot;&quot;&#10;        pass&#10;    &#10;    # Instance set up / tear down&#10;&#10;    def setup(self):&#10;        &quot;&quot;&quot;&#10;        Called before each method in this class with a name of the form test_*().&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10; &#10;    def teardown(self):&#10;        &quot;&quot;&quot;&#10;        Called after each method in this class with a name of the form test_*().&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10; &#10;    # Test cases&#10;    &#10;    def test_$FUNCTION_TO_TEST$(self):&#10;        &quot;&quot;&quot;&#10;        Unit test case for :py:func:'$MODULE_TO_TEST$.$FUNCTION_TO_TEST$'.&#10;        &quot;&quot;&quot;&#10;        # TODO:  Needs implementation&#10;        $END$assert_that(True, is_(False))&#10;" description="Unit test class declaration for testing module functions" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE_TO_TEST" expression="" defaultValue="&quot;module_to_test&quot;" alwaysStopAt="true" />
+    <variable name="FUNCTION_TO_TEST" expression="" defaultValue="&quot;function_to_test&quot;" alwaysStopAt="true" />
+    <variable name="CAMEL_MODULE_TO_TEST" expression="capitalize(underscoresToCamelCase(MODULE_TO_TEST))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="testclass" value="class Test$CLASS_TO_TEST$(object):&#10;    &quot;&quot;&quot;&#10;    Unit test for class :py:class:'$CLASS_TO_TEST$'.&#10;    &quot;&quot;&quot;&#10;&#10;    ##############################&#10;    # Static methods&#10;&#10;    ##############################&#10;    # Class attributes&#10;&#10;    ##############################&#10;    # Class methods&#10;&#10;    # Class set up / tear down&#10;&#10;    @classmethod&#10;    def setup_class(cls):&#10;        &quot;&quot;&quot;&#10;        Called before all of the other methods in this class.&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10; &#10;    @classmethod&#10;    def teardown_class(cls):&#10;        &quot;&quot;&quot;&#10;        Called after all of the other methods in this class.&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10;&#10;    ##############################&#10;    # Instance methods&#10;&#10;    def __init__(self):&#10;        &quot;&quot;&quot;&#10;        Class initializer method.&#10;        &quot;&quot;&quot;&#10;        pass&#10;    &#10;    # Instance set up / tear down&#10;&#10;    def setup(self):&#10;        &quot;&quot;&quot;&#10;        Called before each method in this class with a name of the form test_*().&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10; &#10;    def teardown(self):&#10;        &quot;&quot;&quot;&#10;        Called after each method in this class with a name of the form test_*().&#10;        &quot;&quot;&quot;&#10;        # TODO: Needs implementation or delete if unnecessary&#10; &#10;    # Test cases&#10;    &#10;    def test_$METHOD_TO_TEST$(self):&#10;        &quot;&quot;&quot;&#10;        Unit test case for :py:method:'$CLASS_TO_TEST$.$METHOD_TO_TEST$'.&#10;        &quot;&quot;&quot;&#10;        # TODO:  Needs implementation&#10;        $END$assert_that(True, is_(False))&#10;" description="Unit test class declaration for testing a class" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_TO_TEST" expression="$SELECTION$" defaultValue="&quot;ClassToTest&quot;" alwaysStopAt="true" />
+    <variable name="METHOD_TO_TEST" expression="" defaultValue="&quot;method_to_test&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="testmeth" value="# noinspection PyMethodMayBeStatic&#10;def test_$METHOD_TO_TEST$(self):&#10;    &quot;&quot;&quot;&#10;    Unit test case for :py:method:'$CLASS_NAME$.$METHOD_TO_TEST$'.&#10;    &quot;&quot;&quot;&#10;    assert_that($VALUE$, is_(True))&#10;            &#10;" description="Unit test case for method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_TO_TEST" expression="" defaultValue="&quot;method_to_test&quot;" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;False&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="rstclass" value=":py:class:'$NAME$'$END$" description="Docstring Class Reference" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="Django" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
