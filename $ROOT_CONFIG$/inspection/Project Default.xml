@@ -1,0 +1,15 @@
+<inspections profile_name="Project Default" version="1.0" is_locked="false">
+  <option name="myName" value="Project Default" />
+  <option name="myLocal" value="true" />
+  <inspection_tool class="PyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+  <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="ignoredPackages">
+      <value>
+        <list size="1">
+          <item index="0" class="java.lang.String" itemvalue="ciso8601-master" />
+        </list>
+      </value>
+    </option>
+  </inspection_tool>
+  <inspection_tool class="SqlResolveInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+</inspections>
