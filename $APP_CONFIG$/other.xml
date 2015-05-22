@@ -131,14 +131,14 @@
   <component name="PyTestFrameworkService">
     <option name="SDK_TO_PYTEST">
       <map>
-        <entry key="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer/venv/bin/python" value="false" />
         <entry key="/usr/bin/python" value="false" />
+        <entry key="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer/venv/bin/python" value="false" />
       </map>
     </option>
     <option name="SDK_TO_NOSETEST">
       <map>
-        <entry key="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer/venv/bin/python" value="true" />
         <entry key="/usr/bin/python" value="false" />
+        <entry key="$USER_HOME$/PyCharmProjects/evalytica-trunk/StdAnalyticServer/venv/bin/python" value="true" />
       </map>
     </option>
     <option name="SDK_TO_ATTEST">
@@ -169,9 +169,8 @@
     </option>
     <option name="myTypedURLs">
       <list>
-        <option value="https://e40.evidera.com/svn/StdAnalytic" />
-        <option value="https://e40.evidera.com/svn/StdAnalytic/StdAnalyticServer/trunk/" />
-        <option value="https://e40/svn/StdAnalytic/" />
+        <option value="https://e40.evalytica.com/svn/StdAnalytic/" />
+        <option value="https://e40.evidera.com/svn/StdAnalytic/" />
       </list>
     </option>
   </component>
