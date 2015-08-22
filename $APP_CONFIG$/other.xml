@@ -127,6 +127,8 @@
     <option name="RENAME_SEARCH_IN_COMMENTS_FOR_CLASS" value="true" />
     <option name="RENAME_SEARCH_NON_CODE_FOR_CLASS" value="true" />
     <option name="RENAME_SEARCH_IN_COMMENTS_FOR_VARIABLE" value="true" />
+    <option name="RENAME_CLASS_CONTAINING_FILE" value="false" />
+    <option name="RENAME_CLASS_INHERITORS" value="false" />
     <option name="INSERT_TYPE_DOCSTUB" value="true" />
   </component>
   <component name="PyTestFrameworkService">
