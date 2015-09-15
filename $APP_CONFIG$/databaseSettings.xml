@@ -12,7 +12,9 @@
       </parameter-patterns>
     </text-mode>
     <extractors>
-      <std-extractor type="csv" name="Comma-separated Values (CSV)" />
+      <std-extractor type="csv" name="Comma-separated Values (CSV)">
+        <option name="column-names" value="true" />
+      </std-extractor>
       <std-extractor type="tsv" name="Tab-separated Values (TSV)" />
       <std-extractor type="html" name="HTML Table" />
       <extractor type="sql-insert" name="SQL Insert Statements" />
